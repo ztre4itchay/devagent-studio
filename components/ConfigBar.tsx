@@ -11,7 +11,7 @@ interface ConfigProps {
   isShow: boolean
   selectedNode: AppNode | undefined
   onClose: () => void
-  onChangeNodeLabel: (label: string) => void
+  onChangeNodeLabel: (changeData: any) => void
 }
 
 const configMap: Record<string, ComponentType<NodeConfigProps>> = {

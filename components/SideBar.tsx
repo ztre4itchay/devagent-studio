@@ -20,22 +20,22 @@ export default function Sidebar() {
     <aside className="border border-amber-200">
       <div className="description">You can drag these nodes to the pane on the right.</div>
       <div className="node-container p-4">
-        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('InputNode', event)} draggable>
+        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('input', event)} draggable>
           InputNode
         </div>
-        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('LLMNode', event)} draggable>
+        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('llm', event)} draggable>
           LLMNode
         </div>
-        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('ToolNode', event)} draggable>
+        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('tool', event)} draggable>
           ToolNode
         </div>
-        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('CodeNode', event)} draggable>
+        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('code', event)} draggable>
           CodeNode
         </div>
-        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('ConditionNode', event)} draggable>
+        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('condition', event)} draggable>
           ConditionNode
         </div>
-        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('OutputNode', event)} draggable>
+        <div className="dndnode input border mb-4 border-amber-400" onDragStart={(event) => onDragstart('output', event)} draggable>
           OutputNode
         </div>
       </div>

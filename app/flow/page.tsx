@@ -115,7 +115,7 @@ const DnDFlow = () => {
         setSelectedNode(node)
     }
 
-    const onChangeNodeLabel = (label: string) => {
+    const onChangeNodeLabel = (changeData) => {
         if (!selectedNode) {
             return
         }
@@ -127,7 +127,7 @@ const DnDFlow = () => {
         }
         newNodes[index] = {
             ...newNodes[index],
-            data: { ...newNodes[index].data, label },
+            data: { ...newNodes[index].data, ...changeData },
         }
         setNodes(newNodes)
     }
